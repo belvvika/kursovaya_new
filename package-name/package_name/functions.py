@@ -12,11 +12,15 @@ def read_json(file_path):
 
 
 
-def sort_data():
+def sort_data(data: list[dict]) -> list[dict]:
     '''
     сортирует данные по дате
     '''
-    pass
+    sorted_data = []
+    for operation in data:
+        if operation['state'] == 'EXECUTED':
+            sorted_data.append(operation)
+    return sorted_data
 
 
 
