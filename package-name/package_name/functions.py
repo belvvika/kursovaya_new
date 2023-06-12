@@ -50,3 +50,13 @@ def data(date: list[dict]) -> list[dict]:
             date_list.append(operation)
     return date_list[:10]
 
+def description(description: list[dict]) -> list[dict]:
+    '''
+    возвращает описание перевода
+    '''
+    description_list = []
+    for operation in description:
+        if operation['description']:
+            description_list.append(operation)
+    return description_list
+
