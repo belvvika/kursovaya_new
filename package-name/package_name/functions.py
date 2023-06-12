@@ -36,11 +36,16 @@ def hide_card(number: list[dict]) -> list[dict]:
     return hiden_number
 
 
-def hide_amount():
+def hide_amount(amount:list[dict]) -> list[dict]:
     '''
     скрывает исходный номер счета
     '''
-    pass
+    hiden_amount = []
+    for operation in amount:
+        if operation['to']:
+            hiden_amount.append(operation)
+            hiden_amount[:-4] = '*'
+    return hiden_amount
 
 
 
