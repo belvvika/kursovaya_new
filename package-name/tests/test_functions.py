@@ -1,4 +1,4 @@
-from package_name.functions import read_json, sort_data, hide_card, hide_amount, data
+from package_name.functions import read_json, sort_data, hide_card, hide_amount, data, description
 
 
 
@@ -20,3 +20,6 @@ def test_hide_amount(expexted_result_for_hide_amount):
 
 def test_data(expexted_result_data):
     assert data(expexted_result_data)
+
+def test_description(expexted_result_description):
+    assert description(expexted_result_description)
