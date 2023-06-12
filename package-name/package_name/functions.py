@@ -1,16 +1,12 @@
 import json
 
-
 def read_json(file_path):
     '''
     читает файл json
     '''
     with open(file_path, encoding='utf-8') as f:
         data = json.load(f)
-
     return data
-
-
 
 def sort_data(data: list[dict]) -> list[dict]:
     '''
@@ -21,8 +17,6 @@ def sort_data(data: list[dict]) -> list[dict]:
         if operation['state'] == 'EXECUTED':
             sorted_data.append(operation)
     return sorted_data
-
-
 
 def hide_card(number: list[dict]) -> list[dict]:
     '''
@@ -35,7 +29,6 @@ def hide_card(number: list[dict]) -> list[dict]:
             hiden_number[14:-4] = '*'
     return hiden_number
 
-
 def hide_amount(amount:list[dict]) -> list[dict]:
     '''
     скрывает исходный номер счета
@@ -47,5 +40,13 @@ def hide_amount(amount:list[dict]) -> list[dict]:
             hiden_amount[:-4] = '*'
     return hiden_amount
 
-
+def data(date: list[dict]) -> list[dict]:
+    '''
+    возвращает дату перевода
+    '''
+    date_list = []
+    for operation in date:
+        if operation['date']:
+            date_list.append(operation)
+    return date_list[:10]
 
