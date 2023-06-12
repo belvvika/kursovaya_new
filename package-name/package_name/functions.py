@@ -60,3 +60,13 @@ def description(description: list[dict]) -> list[dict]:
             description_list.append(operation)
     return description_list
 
+def amount(amount: list[dict]) -> list[dict]:
+    '''
+    возвращает сумму перевода
+    '''
+    amount_list = []
+    for operation in amount:
+        if operation['operationAmount']:
+            amount_list.append(operation)
+    return amount_list
+
