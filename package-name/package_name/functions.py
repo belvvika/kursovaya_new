@@ -24,11 +24,16 @@ def sort_data(data: list[dict]) -> list[dict]:
 
 
 
-def hide_card():
+def hide_card(number: list[dict]) -> list[dict]:
     '''
     скрывает исходный номер карты
     '''
-    pass
+    hiden_number = []
+    for operation in number:
+        if operation['from']:
+            hiden_number.append(operation)
+            hiden_number[14:-4] = '*'
+    return hiden_number
 
 
 def hide_amount():
