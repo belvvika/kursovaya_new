@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f987286d-64aa-4b93-9edc-f2afe60ff223" name="Changes" comment="add main.py" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2R3fa8vMsYxsQgcPx7c8SUbzGoJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bellv\Documents\GitHub\kursovaya_new\package-name\package_name" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.conftest">
+    <configuration name="conftest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="kursovaya_new" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/package-name/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/package-name/tests/conftest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="functions (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="kursovaya_new" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/package-name/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/package-name/src/functions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="kursovaya_new" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/package-name/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/package-name/src/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_functions.test_read_json" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="kursovaya_new" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/package-name/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_functions.test_read_json&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_functions.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="kursovaya_new" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/package-name/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/package-name/tests/test_functions.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.functions (1)" />
+        <item itemvalue="Python tests.Python tests in test_functions.py" />
+        <item itemvalue="Python tests.Python tests for test_functions.test_read_json" />
+        <item itemvalue="Python.conftest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f987286d-64aa-4b93-9edc-f2afe60ff223" name="Changes" comment="" />
+      <created>1686483830624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686483830624</updated>
+    </task>
+    <task id="LOCAL-00001" summary="new">
+      <created>1686484742450</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686484742450</updated>
+    </task>
+    <task id="LOCAL-00002" summary=".gitignore">
+      <created>1686485029244</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686485029244</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add oporations.json">
+      <created>1686486885333</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686486885333</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add functions.py">
+      <created>1686487710178</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686487710178</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add confitest.py">
+      <created>1686520453281</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686520453281</updated>
+    </task>
+    <task id="LOCAL-00006" summary="import json">
+      <created>1686520489463</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686520489463</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test_functions.py and test_operations.json">
+      <created>1686520548420</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686520548420</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add data_for sort and expected_result_for_sort">
+      <created>1686524080333</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686524080333</updated>
+    </task>
+    <task id="LOCAL-00009" summary="test sort data">
+      <created>1686524098214</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686524098214</updated>
+    </task>
+    <task id="LOCAL-00010" summary="sort data">
+      <created>1686524123453</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686524123453</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add expected_result_for_card">
+      <created>1686558449995</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686558449995</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test hide card">
+      <created>1686558468606</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686558468606</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add hide card">
+      <created>1686558484272</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686558484272</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add expected_result_for_hide_amount">
+      <created>1686559996605</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686559996605</updated>
+    </task>
+    <task id="LOCAL-00015" summary="test hide amount">
+      <created>1686560022454</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686560022454</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add hide amount">
+      <created>1686560032361</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686560032361</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add expected_result_data">
+      <created>1686561737392</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686561737392</updated>
+    </task>
+    <task id="LOCAL-00018" summary="test data">
+      <created>1686561749726</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1686561749726</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add data">
+      <created>1686561762765</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686561762765</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add expexted_result_description">
+      <created>1686562651670</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1686562651670</updated>
+    </task>
+    <task id="LOCAL-00021" summary="test description">
+      <created>1686562758727</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1686562758727</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add description">
+      <created>1686562769787</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1686562769787</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add expexted_result_amount">
+      <created>1686563885604</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1686563885604</updated>
+    </task>
+    <task id="LOCAL-00024" summary="test amount">
+      <created>1686563909832</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1686563909832</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add amount">
+      <created>1686563918341</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1686563918341</updated>
+    </task>
+    <task id="LOCAL-00026" summary="исправила директорию на src">
+      <created>1686587998363</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1686587998363</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add main.py">
+      <created>1686588022766</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1686588022766</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add oporations.json" />
+    <MESSAGE value="add functions.py" />
+    <MESSAGE value="add confitest.py" />
+    <MESSAGE value="import json" />
+    <MESSAGE value="test_functions.py and test_operations.json" />
+    <MESSAGE value="add data_for sort and expected_result_for_sort" />
+    <MESSAGE value="test sort data" />
+    <MESSAGE value="sort data" />
+    <MESSAGE value="add expected_result_for_card" />
+    <MESSAGE value="test hide card" />
+    <MESSAGE value="add hide card" />
+    <MESSAGE value="add expected_result_for_hide_amount" />
+    <MESSAGE value="test hide amount" />
+    <MESSAGE value="add hide amount" />
+    <MESSAGE value="add expected_result_data" />
+    <MESSAGE value="test data" />
+    <MESSAGE value="add data" />
+    <MESSAGE value="add expexted_result_description" />
+    <MESSAGE value="test description" />
+    <MESSAGE value="add description" />
+    <MESSAGE value="add expexted_result_amount" />
+    <MESSAGE value="test amount" />
+    <MESSAGE value="add amount" />
+    <MESSAGE value="исправила директорию на src" />
+    <MESSAGE value="add main.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add main.py" />
+  </component>
+</project>
