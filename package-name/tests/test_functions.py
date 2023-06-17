@@ -1,4 +1,4 @@
-from src.functions import read_json, sort_data, hide_card, hide_amount, data, description, amount
+from src.functions import read_json, sort_data, hide_card, hide_amount, data, description, amount, sort_data_by_date
 
 
 
@@ -15,11 +15,11 @@ def test_hide_card(expected_result_for_hide_card):
 def test_hide_amount(expexted_result_for_hide_amount):
     assert hide_amount(expexted_result_for_hide_amount)
 
-def test_data(expexted_result_data):
-    assert data(expexted_result_data)
-
 def test_description(expexted_result_description):
     assert description(expexted_result_description)
 
 def test_amount(expexted_result_amount):
     assert amount(expexted_result_amount)
+
+def test_sort_data_by_date(expexted_result_sort_data_by_date):
+    assert sort_data_by_date(expexted_result_sort_data_by_date)
