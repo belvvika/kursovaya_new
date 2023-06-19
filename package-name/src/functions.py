@@ -1,5 +1,4 @@
 import json
-
 def read_json(file_path):
     '''
     читает файл json
@@ -65,7 +64,6 @@ def sort_data_by_date(data: list[dict]) -> list[dict]:
     sort_data_by_date_list = []
     for operation in data:
         if operation.get('date'):
-            data.sort(key=lambda x: x['date'], reverse=True)
+            sort_data_by_date_list.sort(key=lambda x: x['date'], reverse=True)
             sort_data_by_date_list.append(operation)
-            sort_data_by_date_list
     return sort_data_by_date_list
