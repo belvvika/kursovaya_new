@@ -11,5 +11,5 @@ function_list_all = description_list[:5]
 
 for key in function_list_all:
     print(f'{key.get("date")[:10]} -> {key.get("description")}')
-    print(f'{key.get("from")} -> {key.get("to")}')
+    print(f'{key.get("from")[:6]}{key.get("from")[6]+"** ****"} {key.get("from")[-4:]} -> {key.get("to")[:4]}{key.get("to")[4]+"**"}{key.get("to")[-4:]}')
     print(f'{key.get("operationAmount")["amount"]} {key.get("operationAmount")["currency"]["name"]}')
