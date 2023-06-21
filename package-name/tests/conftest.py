@@ -153,42 +153,6 @@ def expected_result_for_sort():
     }]
 
 
-@pytest.fixture
-def expected_result_for_hide_card():
-    return [{
-        "id": 441945886,
-        "state": "EXECUTED",
-        "date": "2019-08-26T10:50:58.294041",
-        "operationAmount": {
-          "amount": "31957.58",
-          "currency": {
-            "name": "руб.",
-            "code": "RUB"
-          }
-        },
-        "description": "Перевод организации",
-        "from": "Maestro 1596837868705199",
-        "to": "Счет 64686473678894779589"
-    }]
-
-
-@pytest.fixture
-def expexted_result_for_hide_amount():
-    return [{
-        "id": 441945886,
-        "state": "EXECUTED",
-        "date": "2019-08-26T10:50:58.294041",
-        "operationAmount": {
-          "amount": "31957.58",
-          "currency": {
-            "name": "руб.",
-            "code": "RUB"
-          }
-        },
-        "description": "Перевод организации",
-        "from": "Maestro 1596837868705199",
-        "to": "Счет 64686473678894779589"
-    }]
 
 @pytest.fixture
 def expexted_result_description():
@@ -317,3 +281,18 @@ def expexted_result_sort_data_by_date():
         "from": "Visa Platinum 1246377376343588",
         "to": "Счет 14211924144426031657"
       }]
+
+@pytest.fixture
+def expexted_result_mask_from_to_msg():
+    return "Maestro 1596837868705199"
+    return "Счет 64686473678894779589"
+@pytest.fixture
+def expexted_result_mask_card_number():
+    return "Maestro 1596837868705199"
+@pytest.fixture
+def expexted_result_mask_account_number():
+    return "Счет 64686473678894779589"
+
+@pytest.fixture
+def expexted_result_get_date():
+    return "2019-08-26T10:50:58.294041"
