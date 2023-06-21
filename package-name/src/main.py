@@ -1,15 +1,21 @@
-from functions import read_json, sort_data, hide_card, sort_data_by_date, hide_amount, amount, description
+from functions import read_json, sort_data, sort_data_by_date, mask_from_to_msg, get_date
 import os
 read_json_list = read_json(os.path.join(os.path.dirname(__file__), 'operations.json'))
 sort_data_list = sort_data(read_json_list)
 sort_data_by_date_list = sort_data_by_date(sort_data_list)
-hide_card_list = hide_card(sort_data_by_date_list)
-hide_amount_list = hide_amount(hide_card_list)
-amount_list = amount(hide_amount_list)
-description_list = description(amount_list)
-function_list_all = description_list[:5]
 
-for key in function_list_all:
-    print(f'{key.get("date")[:10]} -> {key.get("description")}')
-    print(f'{key.get("from")[:6]}{key.get("from")[6]+"** ****"} {key.get("from")[-4:]} -> {key.get("to")[:4]}{key.get("to")[4]+"**"}{key.get("to")[-4:]}')
-    print(f'{key.get("operationAmount")["amount"]} {key.get("operationAmount")["currency"]["name"]}')
+function_list_all = sort_data_by_date_list[:5]
+
+for operation in function_list_all:
+    date = get_date(operation.get('date'))
+    desc = operation.get('description')
+    from_ = mask_from_to_msg(operation.get('from'))
+    if from_:
+        from_ = from_ + '->'
+    to_ = mask_from_to_msg(operation.get('to'))
+    amount = operation.get('operationAmount')['amount']
+    currency = operation.get('operationAmount')['currency']['name']
+
+print(f'{date} -> {desc}')
+print(f'{from_}{to_}')
+print(f'{amount} {currency}')
