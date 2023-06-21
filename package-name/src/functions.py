@@ -17,26 +17,6 @@ def sort_data(data: list[dict]) -> list[dict]:
             sorted_data.append(operation)
     return sorted_data
 
-def hide_card(number: list[dict]) -> list[dict]:
-    '''
-    скрывает исходный номер карты
-    '''
-    hiden_number = []
-    for operation in number:
-        if operation.get('from'):
-            hiden_number.append(operation)
-    return hiden_number
-
-def hide_amount(amount:list[dict]) -> list[dict]:
-    '''
-    скрывает исходный номер счета
-    '''
-    hiden_amount = []
-    for operation in amount:
-        if operation.get('to'):
-            hiden_amount.append(operation)
-    return hiden_amount
-
 def description(description: list[dict]) -> list[dict]:
     '''
     возвращает описание перевода
@@ -67,3 +47,31 @@ def sort_data_by_date(data: list[dict]) -> list[dict]:
             sort_data_by_date_list.sort(key=lambda x: x['date'], reverse=True)
             sort_data_by_date_list.append(operation)
     return sort_data_by_date_list
+
+def mask_card_number(number: str) -> str:
+    '''
+    скрывает номер карты
+    '''
+    return number[:4] + ' ' + number[4:6] + '** **** ' + number[-4:]
+def mask_account_number(number: str) -> str:
+    '''
+    скрывает номер счета
+    '''
+    return  '**' + number[-4:]
+def mask_from_to_msg(msg: [str, None]) -> str:
+    if msg is None:
+        return ''
+    msg_split = msg.split(sep=' ')
+    if msg_split[0] == 'Счет':
+        number_hidden = mask_account_number(msg_split[-1])
+    else:
+        number_hidden = mask_card_number(msg_split[-1])
+    return ''.join(msg_split[:-1]) + ' ' + number_hidden
+
+def get_date(dt:str) -> str:
+    '''
+    возвращает преобразованную дату
+    '''
+    sep = '.'
+    d = dt[0:10].split(sep='-')
+    return d[2] + sep + d[1] + sep + d[0]
