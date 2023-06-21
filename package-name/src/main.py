@@ -11,11 +11,10 @@ for operation in function_list_all:
     desc = operation.get('description')
     from_ = mask_from_to_msg(operation.get('from'))
     if from_:
-        from_ = from_ + '->'
+        from_ = from_ + ' -> '
     to_ = mask_from_to_msg(operation.get('to'))
     amount = operation.get('operationAmount')['amount']
     currency = operation.get('operationAmount')['currency']['name']
-
-print(f'{date} -> {desc}')
-print(f'{from_}{to_}')
-print(f'{amount} {currency}')
+    print(f'{date} -> {desc}')
+    print(f'{from_}{to_}')
+    print(f'{amount} {currency}')
