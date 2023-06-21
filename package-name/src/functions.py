@@ -1,5 +1,4 @@
 import json
-
 def read_json(file_path):
     '''
     читает файл json
@@ -14,41 +13,9 @@ def sort_data(data: list[dict]) -> list[dict]:
     '''
     sorted_data = []
     for operation in data:
-        if operation['state'] == 'EXECUTED':
+        if operation.get('state') == 'EXECUTED':
             sorted_data.append(operation)
     return sorted_data
-
-def hide_card(number: list[dict]) -> list[dict]:
-    '''
-    скрывает исходный номер карты
-    '''
-    hiden_number = []
-    for operation in number:
-        if operation['from']:
-            hiden_number.append(operation)
-            hiden_number[14:-4] = '*'
-    return hiden_number
-
-def hide_amount(amount:list[dict]) -> list[dict]:
-    '''
-    скрывает исходный номер счета
-    '''
-    hiden_amount = []
-    for operation in amount:
-        if operation['to']:
-            hiden_amount.append(operation)
-            hiden_amount[:-4] = '*'
-    return hiden_amount
-
-def data(date: list[dict]) -> list[dict]:
-    '''
-    возвращает дату перевода
-    '''
-    date_list = []
-    for operation in date:
-        if operation['date']:
-            date_list.append(operation)
-    return date_list[:10]
 
 def description(description: list[dict]) -> list[dict]:
     '''
@@ -56,7 +23,7 @@ def description(description: list[dict]) -> list[dict]:
     '''
     description_list = []
     for operation in description:
-        if operation['description']:
+        if operation.get('description'):
             description_list.append(operation)
     return description_list
 
@@ -66,7 +33,45 @@ def amount(amount: list[dict]) -> list[dict]:
     '''
     amount_list = []
     for operation in amount:
-        if operation['operationAmount']:
+        if operation.get('operationAmount'):
             amount_list.append(operation)
     return amount_list
 
+def sort_data_by_date(data: list[dict]) -> list[dict]:
+    '''
+    возвращает отсортированную дату перевода
+    '''
+    sort_data_by_date_list = []
+    for operation in data:
+        if operation.get('date'):
+            sort_data_by_date_list.sort(key=lambda x: x['date'], reverse=True)
+            sort_data_by_date_list.append(operation)
+    return sort_data_by_date_list
+
+def mask_card_number(number: str) -> str:
+    '''
+    скрывает номер карты
+    '''
+    return number[:4] + ' ' + number[4:6] + '** **** ' + number[-4:]
+def mask_account_number(number: str) -> str:
+    '''
+    скрывает номер счета
+    '''
+    return  '**' + number[-4:]
+def mask_from_to_msg(msg: [str, None]) -> str:
+    if msg is None:
+        return ''
+    msg_split = msg.split(sep=' ')
+    if msg_split[0] == 'Счет':
+        number_hidden = mask_account_number(msg_split[-1])
+    else:
+        number_hidden = mask_card_number(msg_split[-1])
+    return ''.join(msg_split[:-1]) + ' ' + number_hidden
+
+def get_date(dt:str) -> str:
+    '''
+    возвращает преобразованную дату
+    '''
+    sep = '.'
+    d = dt[0:10].split(sep='-')
+    return d[2] + sep + d[1] + sep + d[0]
